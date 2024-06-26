@@ -37,4 +37,9 @@ public class UserController {
         UserDTO updateUser = userService.updateUser(userDTO);
         return new ResponseDTO(HttpStatus.valueOf(204), "User updated successfully", updateUser);
     }
+    @GetMapping(value = "/findUser/{id}")
+    public ResponseDTO findUser(@PathVariable String id) {
+        UserDTO userDTO = userService.findUser(id);
+        return new ResponseDTO(HttpStatus.valueOf(200), "User found successfully", userDTO);
+    }
 }

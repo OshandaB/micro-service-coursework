@@ -1,9 +1,6 @@
 package lk.ijse.gdse.highwayTicketSystem.vehicle_service.dto;
 
-import jakarta.validation.constraints.Email;
-import jakarta.validation.constraints.NotBlank;
-import jakarta.validation.constraints.Pattern;
-import jakarta.validation.constraints.Size;
+import jakarta.validation.constraints.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -21,7 +18,7 @@ public class VehicleDTO {
     @NotBlank(message = "Model is mandatory")
     private String model;
 
-    @NotBlank(message = "Capacity is mandatory")
+    @NotNull(message = "Capacity is mandatory")
     private Integer capacity;
 
     @NotBlank(message = "User is mandatory")

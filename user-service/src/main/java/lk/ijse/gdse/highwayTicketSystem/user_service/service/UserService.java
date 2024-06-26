@@ -12,4 +12,6 @@ public interface UserService {
     public UserDTO updateUser(UserDTO userDTO);
     public UserDTO checkCredentials(String username, String password);
 
+    UserDTO findUser(String id);
+
 }
