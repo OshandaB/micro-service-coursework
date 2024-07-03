@@ -2,11 +2,14 @@ package lk.ijse.gdse.highwayTicketSystem.user_service.entity;
 
 
 import jakarta.persistence.*;
+import lk.ijse.gdse.highwayTicketSystem.user_service.entity.User;
+import lk.ijse.gdse.highwayTicketSystem.user_service.entity.Vehicle;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.time.LocalDateTime;
+import java.time.LocalDate;
+import java.time.LocalTime;
 import java.util.Date;
 
 @Entity
@@ -16,8 +19,8 @@ import java.util.Date;
 public class Ticket {
     @Id
     private String id;
-    private Date issueDate;
-    private Date issueTime;
+    private LocalDate issueDate;
+    private LocalTime issueTime;
     private String entryLocation;
     private String exitLocation;
     @Column(columnDefinition = "varchar(255) default 'not paid'")

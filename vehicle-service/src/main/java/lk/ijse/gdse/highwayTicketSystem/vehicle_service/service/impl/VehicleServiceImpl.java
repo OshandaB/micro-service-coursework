@@ -3,6 +3,7 @@ package lk.ijse.gdse.highwayTicketSystem.vehicle_service.service.impl;
 
 
 
+import lk.ijse.gdse.highwayTicketSystem.vehicle_service.api.UserDTO;
 import lk.ijse.gdse.highwayTicketSystem.vehicle_service.dto.VehicleDTO;
 import lk.ijse.gdse.highwayTicketSystem.vehicle_service.entity.User;
 import lk.ijse.gdse.highwayTicketSystem.vehicle_service.entity.Vehicle;
@@ -35,7 +36,7 @@ public class VehicleServiceImpl implements VehicleService {
     }
 
     @Override
-    public VehicleDTO registerVehicle(VehicleDTO vehicleDTO,Object userDTO) {
+    public VehicleDTO registerVehicle(VehicleDTO vehicleDTO, Object userDTO) {
         String vehicleDTOId = vehicleDTO.getId();
         if (vehicleDTOId != null && vehicleRepository.existsById(vehicleDTOId)) {
             throw new DuplicateRecordException("Vehicle with ID " + vehicleDTOId + " already exists.");

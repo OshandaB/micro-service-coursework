@@ -41,7 +41,7 @@ public class VehicleController {
 
 
             }catch (Exception e){
-                throw new NotFoundException("User not found with ID: " + vehicleDTO.getUserId());
+                throw new NotFoundException("User not found with ID: " + e.getLocalizedMessage());
 
             }
 
