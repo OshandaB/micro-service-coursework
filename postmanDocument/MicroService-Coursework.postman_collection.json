@@ -56,12 +56,12 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8081/api/v1/user/login",
+							"raw": "http://localhost:8080/api/v1/user/login",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "8081",
+							"port": "8080",
 							"path": [
 								"api",
 								"v1",
@@ -116,7 +116,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"id\":\"VEH-001\",\n    \"licensePlate\":\"MO-8068\",\n    \"model\":\"bike\",\n    \"capacity\":1000,\n    \"userId\":\"USER-001\"\n}",
+							"raw": "{\n    \"id\":\"VEH-002\",\n    \"licensePlate\":\"MO-8069\",\n    \"model\":\"bike\",\n    \"capacity\":1000,\n    \"userId\":\"USER-001\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -124,12 +124,12 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8082/api/v1/vehicle/register",
+							"raw": "http://localhost:8080/api/v1/vehicle/register",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "8082",
+							"port": "8080",
 							"path": [
 								"api",
 								"v1",
@@ -146,12 +146,12 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8082/api/v1/vehicle/getAllVehicles",
+							"raw": "http://localhost:8080/api/v1/vehicle/getAllVehicles",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "8082",
+							"port": "8080",
 							"path": [
 								"api",
 								"v1",
@@ -177,12 +177,12 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8082/api/v1/vehicle/update",
+							"raw": "http://localhost:8080/api/v1/vehicle/update",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "8082",
+							"port": "8080",
 							"path": [
 								"api",
 								"v1",
@@ -214,12 +214,12 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8083/api/v1/ticket/create",
+							"raw": "http://localhost:8080/api/v1/ticket/create",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "8083",
+							"port": "8080",
 							"path": [
 								"api",
 								"v1",
@@ -236,12 +236,12 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8083/api/v1/ticket/getAllTickets",
+							"raw": "http://localhost:8080/api/v1/ticket/getAllTickets",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "8083",
+							"port": "8080",
 							"path": [
 								"api",
 								"v1",
@@ -253,7 +253,7 @@
 					"response": []
 				},
 				{
-					"name": "http://localhost:8080/api/v1/ticket/updateStatus/Paid/TIC-001",
+					"name": "updateStatus",
 					"request": {
 						"method": "PUT",
 						"header": [],
@@ -297,12 +297,12 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8084/api/v1/payment/create",
+							"raw": "http://localhost:8080/api/v1/payment/create",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "8084",
+							"port": "8080",
 							"path": [
 								"api",
 								"v1",
