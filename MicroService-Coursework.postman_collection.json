@@ -17,7 +17,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"id\":\"USER-001\",\n    \"name\":\"Banuka\",\n    \"email\":\"banu@gmail.com\",\n    \"password\":\"123456\"\n}",
+							"raw": "{\n    \"id\":\"USER-002\",\n    \"name\":\"Banuka\",\n    \"email\":\"banuka@gmail.com\",\n    \"password\":\"123456\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -39,7 +39,77 @@
 							]
 						}
 					},
-					"response": []
+					"response": [
+						{
+							"name": "register",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\":\"USER-002\",\n    \"name\":\"Banuka\",\n    \"email\":\"banuka@gmail.com\",\n    \"password\":\"123456\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/v1/user/register",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"user",
+										"register"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "date",
+									"value": "Thu, 04 Jul 2024 13:20:24 GMT"
+								},
+								{
+									"key": "vary",
+									"value": "Origin"
+								},
+								{
+									"key": "vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": \"CREATED\",\n    \"message\": \"User registered successfully\",\n    \"data\": null\n}"
+						}
+					]
 				},
 				{
 					"name": "login",
@@ -70,7 +140,77 @@
 							]
 						}
 					},
-					"response": []
+					"response": [
+						{
+							"name": "login",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"email\":\"banu@gmail.com\",\n    \"password\":\"123456\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/v1/user/login",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"user",
+										"login"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "date",
+									"value": "Thu, 04 Jul 2024 13:20:51 GMT"
+								},
+								{
+									"key": "vary",
+									"value": "Origin"
+								},
+								{
+									"key": "vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": \"OK\",\n    \"message\": \"User login successful!\",\n    \"data\": {\n        \"id\": \"USER-001\",\n        \"name\": \"Oshanda\",\n        \"email\": \"banu@gmail.com\",\n        \"password\": \"$2a$10$eQhb/gFh27uuj4e1frxz2.z4dizpKtwFivw0rs/zmu1FLFj/PRmdm\"\n    }\n}"
+						}
+					]
 				},
 				{
 					"name": "update",
@@ -79,7 +219,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"id\":\"USER-001\",\n    \"name\":\"Oshanda\",\n    \"email\":\"banu@gmail.com\",\n    \"password\":\"123456\"\n}",
+							"raw": "{\n    \"id\":\"USER-002\",\n    \"name\":\"Oshanda\",\n    \"email\":\"banuk@gmail.com\",\n    \"password\":\"123456\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -101,7 +241,77 @@
 							]
 						}
 					},
-					"response": []
+					"response": [
+						{
+							"name": "update",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\":\"USER-002\",\n    \"name\":\"Oshanda\",\n    \"email\":\"banuk@gmail.com\",\n    \"password\":\"123456\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/v1/user/update",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"user",
+										"update"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "date",
+									"value": "Thu, 04 Jul 2024 13:21:12 GMT"
+								},
+								{
+									"key": "vary",
+									"value": "Origin"
+								},
+								{
+									"key": "vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": \"NO_CONTENT\",\n    \"message\": \"User updated successfully\",\n    \"data\": {\n        \"id\": \"USER-002\",\n        \"name\": \"Oshanda\",\n        \"email\": \"banuk@gmail.com\",\n        \"password\": \"$2a$10$7nPuS/UCu1hy/XmRqTadKuax0Fy9.4P.ALRkvBaH0DZIenDx/MI42\"\n    }\n}"
+						}
+					]
 				}
 			],
 			"description": ": Registration, profile updates, and credential verification."
@@ -116,7 +326,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"id\":\"VEH-002\",\n    \"licensePlate\":\"MO-8069\",\n    \"model\":\"bike\",\n    \"capacity\":1000,\n    \"userId\":\"USER-001\"\n}",
+							"raw": "{\n    \"id\":\"VEH-003\",\n    \"licensePlate\":\"MO-8090\",\n    \"model\":\"bike\",\n    \"capacity\":1000,\n    \"userId\":\"USER-001\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -138,7 +348,77 @@
 							]
 						}
 					},
-					"response": []
+					"response": [
+						{
+							"name": "register",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\":\"VEH-003\",\n    \"licensePlate\":\"MO-8090\",\n    \"model\":\"bike\",\n    \"capacity\":1000,\n    \"userId\":\"USER-001\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/v1/vehicle/register",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"vehicle",
+										"register"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "date",
+									"value": "Thu, 04 Jul 2024 13:22:40 GMT"
+								},
+								{
+									"key": "vary",
+									"value": "Origin"
+								},
+								{
+									"key": "vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": \"CREATED\",\n    \"message\": \"Vehicle registered successfully\",\n    \"data\": {\n        \"id\": \"VEH-003\",\n        \"licensePlate\": \"MO-8090\",\n        \"model\": \"bike\",\n        \"capacity\": 1000,\n        \"userId\": \"USER-001\"\n    }\n}"
+						}
+					]
 				},
 				{
 					"name": "getAllVehicles",
@@ -160,7 +440,68 @@
 							]
 						}
 					},
-					"response": []
+					"response": [
+						{
+							"name": "getAllVehicles",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/v1/vehicle/getAllVehicles",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"vehicle",
+										"getAllVehicles"
+									]
+								}
+							},
+							"status": "Accepted",
+							"code": 202,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "date",
+									"value": "Thu, 04 Jul 2024 13:23:36 GMT"
+								},
+								{
+									"key": "vary",
+									"value": "Origin"
+								},
+								{
+									"key": "vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": \"OK\",\n    \"message\": \"Success\",\n    \"data\": [\n        {\n            \"id\": \"VEH-001\",\n            \"licensePlate\": \"MO-8068\",\n            \"model\": \"bike\",\n            \"capacity\": 1000,\n            \"userId\": \"USER-001\"\n        },\n        {\n            \"id\": \"VEH-002\",\n            \"licensePlate\": \"MO-8069\",\n            \"model\": \"bike\",\n            \"capacity\": 1000,\n            \"userId\": \"USER-001\"\n        },\n        {\n            \"id\": \"VEH-003\",\n            \"licensePlate\": \"MO-8090\",\n            \"model\": \"bike\",\n            \"capacity\": 1000,\n            \"userId\": \"USER-001\"\n        }\n    ]\n}"
+						}
+					]
 				},
 				{
 					"name": "update",
@@ -191,7 +532,77 @@
 							]
 						}
 					},
-					"response": []
+					"response": [
+						{
+							"name": "update",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\":\"VEH-001\",\n    \"licensePlate\":\"MO-8067\",\n    \"model\":\"bike\",\n    \"capacity\":1500,\n    \"userId\":\"USER-001\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/v1/vehicle/update",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"vehicle",
+										"update"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "date",
+									"value": "Thu, 04 Jul 2024 13:23:52 GMT"
+								},
+								{
+									"key": "vary",
+									"value": "Origin"
+								},
+								{
+									"key": "vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": \"CREATED\",\n    \"message\": \"Vehicle updated successfully\",\n    \"data\": {\n        \"id\": \"VEH-001\",\n        \"licensePlate\": \"MO-8067\",\n        \"model\": \"bike\",\n        \"capacity\": 1500,\n        \"userId\": \"USER-001\"\n    }\n}"
+						}
+					]
 				}
 			],
 			"description": "Registration, updates, and retrieval of vehicle details."
@@ -206,7 +617,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"id\": \"TIC-003\",\n    \"issueDate\": \"2026-06-26\",\n    \"issueTime\": \"15:20:00\",\n    \"entryLocation\": \"Galle\",\n    \"exitLocation\": \"Colombo\",\n    \"status\": \"Not Paid\",\n    \"amount\": 100.50,\n    \"userId\": \"USER-001\",\n    \"vehicleId\": \"VEH-001\"\n}",
+							"raw": "{\n    \"id\": \"TIC-004\",\n    \"issueDate\": \"2026-06-26\",\n    \"issueTime\": \"15:20:00\",\n    \"entryLocation\": \"Galle\",\n    \"exitLocation\": \"Colombo\",\n    \"status\": \"Not Paid\",\n    \"amount\": 100.50,\n    \"userId\": \"USER-001\",\n    \"vehicleId\": \"VEH-001\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -228,7 +639,146 @@
 							]
 						}
 					},
-					"response": []
+					"response": [
+						{
+							"name": "duplicateID",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": \"TIC-003\",\n    \"issueDate\": \"2026-06-26\",\n    \"issueTime\": \"15:20:00\",\n    \"entryLocation\": \"Galle\",\n    \"exitLocation\": \"Colombo\",\n    \"status\": \"Not Paid\",\n    \"amount\": 100.50,\n    \"userId\": \"USER-001\",\n    \"vehicleId\": \"VEH-001\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/v1/ticket/create",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"ticket",
+										"create"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "date",
+									"value": "Thu, 04 Jul 2024 13:24:48 GMT"
+								},
+								{
+									"key": "vary",
+									"value": "Origin"
+								},
+								{
+									"key": "vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": \"NOT_FOUND\",\n    \"message\": \"Not found with ID: Ticket with ID TIC-003 already exists.\",\n    \"data\": null\n}"
+						},
+						{
+							"name": "create",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": \"TIC-004\",\n    \"issueDate\": \"2026-06-26\",\n    \"issueTime\": \"15:20:00\",\n    \"entryLocation\": \"Galle\",\n    \"exitLocation\": \"Colombo\",\n    \"status\": \"Not Paid\",\n    \"amount\": 100.50,\n    \"userId\": \"USER-001\",\n    \"vehicleId\": \"VEH-001\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/v1/ticket/create",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"ticket",
+										"create"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "date",
+									"value": "Thu, 04 Jul 2024 13:25:15 GMT"
+								},
+								{
+									"key": "vary",
+									"value": "Origin"
+								},
+								{
+									"key": "vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": \"CREATED\",\n    \"message\": \"Vehicle registered successfully\",\n    \"data\": {\n        \"id\": \"TIC-004\",\n        \"issueDate\": \"2026-06-26\",\n        \"issueTime\": \"15:20:00\",\n        \"entryLocation\": \"Galle\",\n        \"exitLocation\": \"Colombo\",\n        \"status\": \"Not Paid\",\n        \"amount\": 100.5,\n        \"userId\": \"USER-001\",\n        \"vehicleId\": \"VEH-001\"\n    }\n}"
+						}
+					]
 				},
 				{
 					"name": "getAllTickets",
@@ -250,7 +800,68 @@
 							]
 						}
 					},
-					"response": []
+					"response": [
+						{
+							"name": "getAllTickets",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/v1/ticket/getAllTickets",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"ticket",
+										"getAllTickets"
+									]
+								}
+							},
+							"status": "Accepted",
+							"code": 202,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "date",
+									"value": "Thu, 04 Jul 2024 13:25:35 GMT"
+								},
+								{
+									"key": "vary",
+									"value": "Origin"
+								},
+								{
+									"key": "vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": \"OK\",\n    \"message\": \"Success\",\n    \"data\": [\n        {\n            \"id\": \"TIC-003\",\n            \"issueDate\": \"2026-06-26\",\n            \"issueTime\": \"15:20:00\",\n            \"entryLocation\": \"Galle\",\n            \"exitLocation\": \"Colombo\",\n            \"status\": \"Paid\",\n            \"amount\": 100.5,\n            \"userId\": \"USER-001\",\n            \"vehicleId\": \"VEH-001\"\n        },\n        {\n            \"id\": \"TIC-004\",\n            \"issueDate\": \"2026-06-26\",\n            \"issueTime\": \"15:20:00\",\n            \"entryLocation\": \"Galle\",\n            \"exitLocation\": \"Colombo\",\n            \"status\": \"Not Paid\",\n            \"amount\": 100.5,\n            \"userId\": \"USER-001\",\n            \"vehicleId\": \"VEH-001\"\n        }\n    ]\n}"
+						}
+					]
 				},
 				{
 					"name": "updateStatus",
@@ -311,7 +922,77 @@
 							]
 						}
 					},
-					"response": []
+					"response": [
+						{
+							"name": "MakePayment",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": \"PAY-003\",\n    \"paymentDate\": \"2024-06-26\",\n    \"paymentMethod\": \"Credit Card\",\n    \"amount\": 150.75,\n    \"userId\": \"USER-001\",\n    \"ticketId\": \"TIC-003\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/v1/payment/create",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"payment",
+										"create"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "date",
+									"value": "Thu, 04 Jul 2024 13:26:02 GMT"
+								},
+								{
+									"key": "vary",
+									"value": "Origin"
+								},
+								{
+									"key": "vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": \"CREATED\",\n    \"message\": \"Payment  successfully Completed\",\n    \"data\": {\n        \"id\": \"PAY-003\",\n        \"paymentDate\": \"2024-06-26\",\n        \"paymentMethod\": \"Credit Card\",\n        \"amount\": 150.75,\n        \"userId\": \"USER-001\",\n        \"ticketId\": \"TIC-003\"\n    }\n}"
+						}
+					]
 				}
 			],
 			"description": "Validate payment details, update ticket statuses upon successful  \npayment confirmation."
