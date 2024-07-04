@@ -6,6 +6,7 @@ Welcome to the Highway Ticket Management System! This project is a microservice-
 Service Registry (Eureka): Dynamic service registration and discovery.
 
 Config Server: Centralized configuration management.
+githubUrl : https://github.com/OshandaB/microservice-config
 
 API Gateway: Efficient routing of client requests.
 
