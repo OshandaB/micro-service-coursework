@@ -6,6 +6,7 @@ Welcome to the Highway Ticket Management System! This project is a microservice-
 Service Registry (Eureka): Dynamic service registration and discovery.
 
 Config Server: Centralized configuration management.
+githubUrl : https://github.com/OshandaB/microservice-config
 
 API Gateway: Efficient routing of client requests.
 
@@ -21,7 +22,7 @@ Spring Boot
 
 Spring Cloud (Eureka, Config Server, Gateway)
 
-Postman (for API testing) - https://documenter.getpostman.com/view/31374352/2sA3dxDrGP .
+Postman (for API testing) - [https://documenter.getpostman.com/view/31374352/2sA3dxDrGP](https://documenter.getpostman.com/view/31374352/2sA3dxDrGP) .
 
 ## 🤝 Contributing
 Contributions are welcome! If you'd like to contribute, please fork the repository and submit a pull request. Let's build something great together!
