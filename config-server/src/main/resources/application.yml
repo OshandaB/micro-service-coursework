@@ -11,7 +11,7 @@ spring:
           default-label: main
           clone-on-start: true
           username: OshandaB
-          password: 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
+          password: gitToken
 eureka:
   client:
     register-with-eureka: true
